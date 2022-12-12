@@ -77,6 +77,9 @@
             white-space: nowrap;
             border-radius:50%;
         }
+        [data-table=Upcoming] thead tr th:last-child {
+            width: 10% !important;
+        }
     </style>
 </head>
 
@@ -406,7 +409,7 @@
                                 </div>
                                 <div class="card card-body">
                                     <div class="table-responsive mb-5">
-                                        <table class="table table-hover table-bordered mt-2" data-Table="">
+                                        <table class="table table-hover table-bordered mt-2" data-Table="Upcoming">
                                             <thead style="background-color:#301d44;color: #fff;">
                                                 <tr>
                                                     <th>ID</th>
@@ -416,7 +419,7 @@
                                                     <th>Appt Type / Meeting Link</th>
                                                     <th>Comments</th>
                                                     <th>Status</th>
-                                                    <th style="width:10%">Actions</th>
+                                                    <th>Actions</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -488,7 +491,7 @@
                                 </div>
                                 <div class="card card-body">
                                     <div class="table-responsive mb-5">
-                                        <table class="table table-hover table-bordered mt-2" data-Table>
+                                        <table class="table table-hover table-bordered mt-2" data-Table="Previous">
                                             <thead style="background-color:#301d44;color: #fff;">
                                                 <tr>
                                                     <th></th>
