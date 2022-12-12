@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="assets/css/boxicons.min.css">
 
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
 
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
@@ -67,14 +68,22 @@
 
         @media only screen and (max-width: 767px) {
             [data-updates] {
-                background-color: #ffffff50;
-                width: 50%;
+                background-color: none !important;
+                
             }
+                [data-updates] p {
+                    color: #000;
+                }
         }
+        @media only screen and (min-width: 768px) {
+            [data-updates] {
+                background-color: #301d4480;
+                padding: 1rem;
+            }
 
-        [data-updates] {
-            background-color: #ffffff30;
-            padding: 1rem;
+                [data-updates] p {
+                    color: #fff;
+                }
         }
     </style>
 </head>
@@ -365,7 +374,7 @@
     <div class="container-fluid">
         <div class="position-relative h-100  pt-5">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
+                <div class="carousel-indicators d-none d-lg-flex">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -382,10 +391,10 @@
                     </div>
 
                 </div>
-                <div class="position-absolute overflow-auto d-none d-md-block " style="height: 90%; top: 3%; right: 2%;" data-updates="">
+                <div class="position-absolute row overflow-auto d-none d-md-block col-md-6 col-lg-4" style="height: 90%; top: 3%; right: 2%;" data-updates="">
 
-                    <div class="pt-1 pt-sm-5 pt-md-5 pt-lg-0 ">
-                        <h3 class="text-center ">Recent Updates</h3>
+                    <div class="pt-1 pt-lg-0">
+                        <h3 class="text-center text-white">Recent Updates</h3>
                         <div class="recent-updates">
 
                             <p>For more information on the Continuity of Operations Plan for Development Services Centers <a href="http://ladbs.org/docs/default-source/publications/misc-publications/dsc.pdf" target="_blank">click here</a></p>
@@ -406,11 +415,11 @@
                 </button>-->
             </div>
         </div>
-        <div class="row d-md-none h-100">
+        <div class="row d-md-none h-100 my-2">
 
-            <div class="col-lg-12 col-md-12 col-sm-12 position-relative h-100">
-                <div class="pt-1 pt-sm-5 pt-md-5 pt-lg-0 position-absolute w-100" style="top:3%; right:0;" data-updates="">
-                    <h3 class="text-center mt-md-0 mt-sm-5 pt-0 ">Recent Updates</h3>
+            <div class="col-lg-12 col-md-12 col-sm-12 h-100">
+                <div class="" style="top:3%; right:0;" data-updates="">
+                    <h3 class="text-center mt-md-0 pt-0 ">Recent Updates</h3>
                     <div class="recent-updates">
 
                         <p>For more information on the Continuity of Operations Plan for Development Services Centers <a href="http://ladbs.org/docs/default-source/publications/misc-publications/dsc.pdf" target="_blank">click here</a></p>
