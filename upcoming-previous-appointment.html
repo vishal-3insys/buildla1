@@ -36,6 +36,8 @@
 
     <title>Upcoming/Previous Appointment | BuildLA</title>
 
+    <link href="assets/css/bootstrap-icons.css" rel="stylesheet" />
+
     <link rel="icon" type="image/png" href="assets/img/logo/lacity_logo.svg">
 
     <style>
@@ -66,17 +68,19 @@
             padding-bottom: 3rem;
             top: 19% !important;
         }
+
         [tbl-data-icon] {
-            margin:auto;
+            margin: auto;
             height: 1.5rem;
             width: 1.5rem;
             display: flex;
-            color:#fff;
+            color: #fff;
             align-items: center;
             justify-content: center;
             white-space: nowrap;
-            border-radius:50%;
+            border-radius: 50%;
         }
+
         [data-table=Upcoming] thead tr th:last-child {
             width: 12% !important;
         }
@@ -384,14 +388,14 @@
                             <ul class="nav justify-content-end nav-pills card-header-pills" role="tablist">
                                 <li class="nav-item">
                                     <a class="nav-link active" data-bs-toggle="tab" href="#one1" role="tab" data-title="one">
-                                        <!--<span class="d-block d-sm-none"><i class="fas fa-home"></i></span>-->
-                                        <span class="d-block">Upcoming</span>
+                                        <span class=" "><i class="bi bi-calendar-event-fill "></i></span>
+                                        <span class="">Upcoming</span>
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" data-bs-toggle="tab" href="#two1" role="tab" data-title="two">
-                                        <!--<span class="d-block d-sm-none"><i class="far fa-user"></i></span>-->
-                                        <span class="d-block">Previous</span>
+                                        <span class=""><i class="bi bi-calendar2-check-fill"></i></span>
+                                        <span class="">Previous</span>
                                     </a>
                                 </li>
 
@@ -405,11 +409,11 @@
                         <div class="tab-content text-muted">
                             <div class="tab-pane active" id="one1" role="tabpanel">
                                 <div class="text-end my-2">
-                                    <button type="button" class="btn btn-primary">View As Calendar</button>
+                                    <button type="button" class="btn btn-primary"><i class="fa fa-calendar-alt">&nbsp;</i>View As Calendar</button>
                                 </div>
                                 <div class="card card-body">
                                     <div class="table-responsive mb-5">
-                                        <table class="table table-hover table-bordered mt-2" data-Table="Upcoming">
+                                        <table class="table table-hover table-bordered mt-2 table-striped" data-Table="Upcoming">
                                             <thead style="background-color:#301d44;color: #fff;">
                                                 <tr>
                                                     <th>ID</th>
@@ -427,20 +431,15 @@
                                                     <td>3987</td>
                                                     <td>Nov 23, 2022<br>3:00 PM to 3:15 PM</td>
                                                     
-                                                    <td>
-                                                        BOE<br>
-                                                        BOE - Central District
-                                                        B Permits
-                                                        123 Main Street
-                                                    </td>
+                                                    <td>BOE - Central District B Permits 123 Main Street</td>
                                                     <td>Text Msg. Number<span class="d-block"><a href="">Add</a></span></td>
                                                     <td>Online Marketing</td>
                                                     <td></td>
-                                                    <td>Submitted</td>
+                                                    <td><span class="badge bg-success">Submitted</span></td>
                                                     <td>
-                                                        <a href="#" class="d-block"><i class="fa fa-times"></i>&nbsp;Cancel</a>
-                                                        <a href="#" class="d-block"><i class="fa fa-calendar"></i>&nbsp;Reshedual</a>
-                                                        <a href="#" class="d-block"><i class="fa fa-file"></i>&nbsp;Attachments</a>
+                                                        <a href="#" class="d-block" data-bs-toggle="tooltip" title="Cancel"><i class="fa fa-times"></i>&nbsp;Cancel</a>
+                                                        <a href="#" class="d-block" data-bs-toggle="tooltip" title="Reshedual"><i class="fa fa-calendar"></i>&nbsp;Reshedual</a>
+                                                        <a href="#" class="d-block" data-bs-toggle="tooltip" title="Attachments"><i class="fa fa-file"></i>&nbsp;Attachments</a>
                                                     </td>
                                                 </tr>
 
@@ -448,15 +447,15 @@
                                                     <td>3809</td>
                                                     <td></td>
 
-                                                    <td>BOE<br> BOE - Harbor District Construction A Permit</td>
+                                                    <td> BOE - Harbor District Construction A Permit</td>
                                                     <td>Text Msg. Number<span class="d-block"><a href="#">Add</a></span></td>
                                                     <td></td>
                                                     <td></td>
-                                                    <td>INPROGRESS</td>
+                                                    <td><span class="badge bg-warning">INPROGRESS</span></td>
                                                     <td>
-                                                        <a href="#" class="d-block "><i class="fa fa-times"></i>&nbsp;Cancel</a>
-                                                        <a href="#" class="d-block"><i class="fa fa-calendar"></i>&nbsp;Resume</a>
-                                                        <a href="#" class="d-block"><i class="fa fa-file"></i>&nbsp;Attachments</a>
+                                                        <a href="#" class="d-block" data-bs-toggle="tooltip" title="Cancel"><i class="fa fa-times"></i>&nbsp;Cancel</a>
+                                                        <a href="#" class="d-block" data-bs-toggle="tooltip" title="Resume"><i class="fa fa-calendar"></i>&nbsp;Resume</a>
+                                                        <a href="#" class="d-block" data-bs-toggle="tooltip" title="Attachments"><i class="fa fa-file"></i>&nbsp;Attachments</a>
                                                     </td>
                                                 </tr>
 
@@ -464,18 +463,15 @@
                                                     <td>3786</td>
                                                     <td></td>
 
-                                                    <td>
-                                                        LADBS <br>LADBS - Metro (Downtown), 10th Floor
-                                                        Case Management
-                                                    </td>
+                                                    <td>LADBS - Metro (Downtown), 10th Floor Case Management</td>
                                                     <td>Text Msg. Number<span class="d-block"><a href="">Add</a></span></td>
                                                     <td></td>
                                                     <td></td>
-                                                    <td>INPROGRESS</td>
+                                                    <td><span class="badge bg-warning">INPROGRESS</span></td>
                                                     <td>
-                                                        <a href="#" class="d-block" data-bs-toggle="tooltip" title="Cancle"><i class="fa fa-times"></i>&nbsp;Cancel</a>
-                                                        <a href="#" class="d-block"><i class="fa fa-calendar"></i>&nbsp;Resume</a>
-                                                        <a href="#" class="d-block"><i class="fa fa-file"></i>&nbsp;Attachments</a>
+                                                        <a href="#" class="d-block" data-bs-toggle="tooltip" title="Cancel"><i class="fa fa-times"></i>&nbsp;Cancel</a>
+                                                        <a href="#" class="d-block" data-bs-toggle="tooltip" title="Resume"><i class="fa fa-calendar"></i>&nbsp;Resume</a>
+                                                        <a href="#" class="d-block" data-bs-toggle="tooltip" title="Attachments" ><i class="fa fa-file"></i>&nbsp;Attachments</a>
                                                     </td>
                                                 </tr>
 
@@ -509,13 +505,13 @@
                                                     <td>Nov 17, 2022<span class="d-block">10:30 AM to 10:45 AM</span></td>
                                                     
                                                     <td>
-                                                        BOE<span class="d-block">
+                                                       <span class="d-block">
                                                             BOE - Central District Excavation U (Utility) Permit
                                                         </span>
                                                     </td>
                                                     <td></td>
                                                     <td>
-                                                        Virtual<span class="d-block"></span>
+                                                        <span class="d-block">Virtual</span>
                                                         <a href="#">https://meet.google.com/qct-ujrr-rsg</a>
                                                     </td>
 
@@ -525,7 +521,7 @@
                                                     <td><span class="bg-danger "  tbl-data-icon><i class="fas fa-close"></i></span></td><td>3933</td>
                                                     <td>Nov 10, 2022<span class="d-block">9:00 AM to 9:30 AM</span></td>
                                                     
-                                                    <td>BOE<span class="d-block"> BOE - Harbor District Sewer Connection (S) Permit</span></td>
+                                                    <td><span class="d-block"> BOE - Harbor District Sewer Connection (S) Permit</span></td>
                                                     <td></td>
                                                     <td>In-Person</td>
 
@@ -536,10 +532,10 @@
                                                     <td>3642</td>
                                                     <td>Sep 30, 2022<span class="d-block">9:30 AM to 9:45 AM</span></td>
 
-                                                    <td>BOE <span class="d-block">BOE - Central District Construction A Permit</span></td>
+                                                    <td><span class="d-block">BOE - Central District Construction A Permit</span></td>
                                                     <td>(626)818-2263</td>
                                                     <td>
-                                                        Virtual<span class="d-block"></span>
+                                                        <span class="d-block">Virtual</span>
                                                         <a href="#">https://meet.google.com/zud-hhix-noh</a>
                                                     </td>
 
@@ -550,10 +546,10 @@
                                                     <td>3641</td>
                                                     <td>Sep 23, 2022<span class="d-block">9:30 AM to 9:45 AM</span></td>
 
-                                                    <td>BOE<span class="d-block">BOE - Central District Construction A Permit 12301 W VALLEYHEART DR</span></td>
+                                                    <td><span class="d-block">BOE - Central District Construction A Permit 12301 W VALLEYHEART DR</span></td>
                                                     <td>(626)818-2263</td>
                                                     <td>
-                                                        Virtual<span class="d-block"></span>
+                                                        <span class="d-block">Virtual</span>
                                                         <a href="#">https://meet.google.com/gyz-kumw-gxt</a>
                                                     </td>
 
@@ -564,7 +560,7 @@
                                                     <td>Aug 24, 2022<span class="d-block">9:30 AM to 9:45 AM</span></td>
                                                     
                                                     <td>
-                                                        LADBS<span class="d-block">
+                                                        <span class="d-block">
                                                             LADBS - Metro (Downtown),
                                                             10th Floor
                                                             Case Management
@@ -573,7 +569,7 @@
                                                     </td>
                                                     <td></td>
                                                     <td>
-                                                        Virtual<span class="d-block"></span>
+                                                        <span class="d-block">Virtual</span>
                                                         <a href="#">https://meet.google.com/pij-fbec-mah</a>
                                                     </td>
 
@@ -744,7 +740,10 @@
         $(document).ready(function () {
             $("[data-Table]").DataTable()
         });
-
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
     </script>
     <script>
         document.querySelector('[data-title="one"]').addEventListener('click', function () { document.querySelector('[data-title="this"]').innerHTML = "Upcoming Appointment"; });

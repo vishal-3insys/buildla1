@@ -33,6 +33,7 @@
 
     <link rel="stylesheet" href="assets/css/all.min.css">
     <link href="assets/css/datatables.min.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap-icons.css" rel="stylesheet" />
     <title>BuildLA |</title>
 
     <link rel="icon" type="image/png" href="assets/img/logo/lacity_logo.svg">
@@ -46,6 +47,7 @@
         .inner-banner {
             background-image: url("assets/img/picture15.jpg");
         }
+
         .menu-li:hover {
             background-color: var(--theme-color-one);
         }
@@ -53,14 +55,16 @@
         .menu-li:has(:is(a.active)) {
             background-color: var(--theme-color-one);
         }
+
         .breadcrumb-item a {
             color: var(--theme-color-two);
         }
+
         .inner-title::before {
-            height:auto!important;
+            height: auto !important;
             padding-top: 3rem;
             padding-bottom: 3rem;
-            top:36%!important;
+            top: 36% !important;
         }
     </style>
 </head>
@@ -503,7 +507,7 @@
                 <p class="d-inline-flex justify-content-start">Transaction ID : 2020000280 (InProgress)</p>
                 <div class="">
                     <button type="button" class="btn btn-primary">Revise</button>
-                    <button type="button" class="btn btn-primary my-1">Print</button>
+                    <button type="button" class="btn btn-primary my-1"><i class="bi bi-printer" > </i>Print</button>
                     <button type="button" class="btn btn-primary my-1">Void Transaction</button>
                 </div>
             </div>

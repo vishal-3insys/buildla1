@@ -836,7 +836,7 @@
     <script>
         let manus = document.querySelectorAll('[data-manu] li.nav-item a');
         const url = window.location.pathname.split('/').reverse()[0];
-
+        document.querySelector('title').innerText(`${url} | BuildLA`);
         document.addEventListener('load', manuactive())
         function manuactive() {
             for (let index = 0; index < manus.length; index++) {

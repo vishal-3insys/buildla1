@@ -32,8 +32,8 @@
     <link rel="stylesheet" href="assets/css/theme-dark.css">
 
     <link rel="stylesheet" href="assets/css/all.min.css">
-
-    <title>BuildLA |</title>
+    <link href="assets/css/bootstrap-icons.css" rel="stylesheet" />
+    <title>Clearance Summary Worksheet | BuildLA</title>
 
     <link rel="icon" type="image/png" href="assets/img/logo/lacity_logo.svg">
 
@@ -58,7 +58,9 @@
         .breadcrumb-item a {
             color: var(--theme-color-two);
         }
-
+        .dropdown-menu li.nav-item a.nav-link:hover {
+            background-color: var(--theme-color-one) !important;
+        }
         .inner-title::before {
             height: auto !important;
             padding-top: 3rem;
@@ -446,7 +448,14 @@
     </div>
 
     <div class="container mb-5">
-        <h3 class="mt-2 mb-3 pt-4" style="color: var(--theme-color-two)!important;">Clearance Summary Worksheet</h3>
+        <div class="d-flex mt-2 mb-3 pt-4 justify-content-between align-items-center">
+            <h3 class=""><span style="color: var(--theme-color-two)!important;">Clearance Summary Worksheet</span></h3>
+            <div class="">
+                <a class="btn btn-primary" data-save-edit="" href="clearance-summary-worksheet-r.html"><i class="far fa-floppy-disk">&nbsp;</i> Save</a>
+            </div>
+           
+        </div>
+        
         <div class="card">
             <div class="card-body">
 
@@ -493,8 +502,8 @@
 
                 <hr>
 
-                <div>
-                    <p class="fw-bold" style="text-align:justify">
+                <div class="p-2" style="background-color: #efeeee;">
+                    <p class="fw-bold " style="text-align: justify;">
                         <span style="color:var(--theme-color-two)">IMPORTANT:</span> This summary documents the clearance(s) required prior to permit issuance. Most clearance(s) are granted electronically, however this form will also be completed so that
                         in the
                         event of a computer outage, there is evidence of the clearance action(s). Keep this form with
@@ -629,7 +638,7 @@
                                         <textarea class="form-control m-1"> >200 from sewer. Obtain B-Permit or Septic tank from Building and Safety.</textarea>
                                     </div>
                                 </div>
-                               
+
                             </div>
 
                         </div>
@@ -653,7 +662,7 @@
                                             <span class="fw-bold m-1" style="color:var(--theme-color-two)">Address Code:</span> <span class="m-1">1</span>
                                         </div>
                                         <div class="col-md-4">
-                                            <span class="fw-bold m-1" style="color:var(--theme-color-two)">Electronic Clearance By :</span><input class="form-check-input m-1" type="checkbox" name="ElectronicClearance" /> <input class="form-control" type="text" value="CMORENO" checked/>
+                                            <span class="fw-bold m-1" style="color:var(--theme-color-two)">Electronic Clearance By :</span><input class="form-check-input m-1" type="checkbox" name="ElectronicClearance" checked/> <input class="form-control" type="text" value="CMORENO"  />
                                         </div>
                                     </div>
                                     <div class="row">
@@ -671,8 +680,6 @@
                                             <span class="fw-bold m-1" style="color:var(--theme-color-two)">Comments:</span><textarea class="form-control" value="">Planning Case ZA-2016-3362-ZAD Planning case grants relief from providing a 20-foot wide adjacent minimum roadwaywidth on two substandard hillside limited streets. Must see B-permit for street improvment. 3 dedication req'd onTelluride St. PEDNING FOR HILLSIDE WAIVER H0201900042. 2/26/2019-- HO201900042, Hillside Dedication Waiver letter 3ft dedication along Telluride! not required, BRO04232-PROPOSED STREET WIDENING IMPROVEMENTS</textarea>
                                         </div>
                                     </div>
-
-
 
                                 </div>
 
@@ -698,23 +705,7 @@
                         <p>
                             Provides immediate responses to all calls requiring non-technical assistance
                         </p>
-                        <!-- <ul class="social-link">
-                            <li>
-                                <a href="#" target="_blank"><i class='bx bxl-facebook'></i></a>
-                            </li>
-                            <li>
-                                <a href="#" target="_blank"><i class='bx bxl-twitter'></i></a>
-                            </li>
-                            <li>
-                                <a href="#" target="_blank"><i class='bx bxl-instagram'></i></a>
-                            </li>
-                            <li>
-                                <a href="#" target="_blank"><i class='bx bxl-pinterest-alt'></i></a>
-                            </li>
-                            <li>
-                                <a href="#" target="_blank"><i class='bx bxl-youtube'></i></a>
-                            </li>
-                        </ul> -->
+                        
                     </div>
                 </div>
 
@@ -766,50 +757,10 @@
                                 638 S Beacon St #276
                             </li>
                         </ul>
-                        <!-- <h3>Contacts</h3> -->
-                        <!-- <ul class="footer-list-two">
-                            <li>
-                                <i class='bx bx-time'></i>
-                                Sun - Fri: 8.00am - 6.00pm
-                            </li>
-                            <li>
-                                <i class='bx bx-location-plus'></i>
-                                6th Floor, Barbosa, Sydney
-                            </li>
-                            <li>
-                                <i class='bx bx-phone'></i>
-                                <a href="tel:+61283171380">+61283171380</a>
-                            </li>
-                            <li>
-                                <i class='bx bx-phone'></i>
-                                <a href="tel:+61483471680">+61483471680</a>
-                            </li>
-                            <li>
-                                <i class='bx bxs-envelope'></i>
-                                <a
-                                    href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#60090e060f2006090e05034e030f0d"><span
-                                        class="__cf_email__"
-                                        data-cfemail="afc6c1c9c0efc9c6c1cacc81ccc0c2">[email&#160;protected]</span></a>
-                            </li>
-                        </ul> -->
-
+                       
                     </div>
                 </div>
-                <!-- <div class="col-lg-3 col-md-6">
-                    <div class="footer-widget pl-2">
-                        <h3>Newsletter</h3>
-                        <div class="newsletter-area">
-                            <form class="newsletter-form" data-toggle="validator" method="POST">
-                                <input type="email" class="form-control" placeholder="Your Email*" name="EMAIL" required
-                                    autocomplete="off">
-                                <button class="default-btn" type="submit">
-                                    Subscribe
-                                </button>
-                                <div id="validator-newsletter" class="form-result"></div>
-                            </form>
-                        </div>
-                    </div>
-                </div> -->
+               
             </div>
         </div>
     </footer>
@@ -889,7 +840,21 @@
 
 
     </script>
-
+    <script>
+        let manus = document.querySelectorAll('[data-manu] li.nav-item a');
+        const url = window.location.pathname.split('/').reverse()[0];
+        const url1 = url.split('.').reverse()[1].replace(/-/g," ");
+        //document.querySelector('title').innerHTML=`${url1} | BuildLA`;
+        //var saveeditbtn = document.querySelector('[data-save-edit]');
+        //var selectinput = document.querySelectorAll('input,textarea').readOnly = true;
+        
+        
+        //function saveedit() {
+        //    if (saveeditbtn) {
+                
+        //    }
+        //}
+    </script>
 </body>
 
 </html>
